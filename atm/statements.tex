@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage[utf8]{vietnam}
+\newcommand{\contestname}{Pre Duyên Hải 2017}
+\usepackage{olymp}
+\usepackage[dvips]{graphicx}
+\usepackage{color}
+\usepackage{colortbl}
+%\usepackage{expdlist}
+%\usepackage{mfpic}
+%\usepackage{comment}
+
+% Treat all pictures as MPS (metapost) when using PDFLaTeX tool
+%\ifx\pdftexversion\undefined
+%\else
+%  \DeclareGraphicsRule{*}{mps}{*}{}
+%\fi
+
+%\textsc{\renewcommand{\contestname}{
+%}
+
+% Copied from 'amstex.tex' \bmod declaration
+\def\bdiv{\mskip-\medmuskip\mkern5mu\mathbin{\mathrm{div}}\mkern5mu\mskip-\medmuskip}
+% End of copied text
+
+\renewcommand{\t}{\texttt}
+
+\begin{document}
+
+
+% Tell LaTeX to make the title.
+%\maketitle
+% Tell LaTex to double space your text.
+%\doublespacing
+%\section{Topic 5}
+\begin{problem}{ATM}{Standard Input}{Standard Output}{1 giây}{256}
+
+Cho một số được biểu diễn là một chuỗi $N$ \textbf{kí tự} (bao gồm cả chữ số 0 ở đầu). 
+
+Xóa đi $K$ kí tự để giá trị của chuỗi còn lại là lớn nhất.
+
+\InputFile
+
+\begin{itemize}
+	\item Dòng đầu ghi 2 số $N$ và $K$.
+	\item Dòng tiếp theo ghi $N$ kí tự biểu diễn số.
+\end{itemize}
+
+\OutputFile
+
+\begin{itemize}
+	\item In ra $N - K$ kí tự còn lại.
+\end{itemize}
+
+\Constraints
+\begin{itemize}
+	\item $0 \le K < N$
+	\item Subtask 1 (10\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 18$
+	\end{itemize}
+	\item Subtask 2 (20\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 1000$
+	\end{itemize}
+	\item Subtask 3 (20\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 10^5$
+	\end{itemize}
+	\item Subtask 4 (50\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 10^6$
+	\end{itemize}
+\end{itemize}
+
+\Example
+
+\begin{example}
+\exmp{
+3 1
+213
+}{
+23
+}%
+\exmp{
+4 1
+0013
+}{
+013
+}%
+\end{example}
+
+\vspace{.5cm}
+
+\end{problem}
+
+
+\end{document}

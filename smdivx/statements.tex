@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage[utf8]{vietnam}
+\newcommand{\contestname}{Pre Duyên Hải 2017}
+\usepackage{olymp}
+\usepackage[dvips]{graphicx}
+\usepackage{color}
+\usepackage{colortbl}
+%\usepackage{expdlist}
+%\usepackage{mfpic}
+%\usepackage{comment}
+
+% Treat all pictures as MPS (metapost) when using PDFLaTeX tool
+%\ifx\pdftexversion\undefined
+%\else
+%  \DeclareGraphicsRule{*}{mps}{*}{}
+%\fi
+
+%\textsc{\renewcommand{\contestname}{
+%}
+
+% Copied from 'amstex.tex' \bmod declaration
+\def\bdiv{\mskip-\medmuskip\mkern5mu\mathbin{\mathrm{div}}\mkern5mu\mskip-\medmuskip}
+% End of copied text
+
+\renewcommand{\t}{\texttt}
+
+\begin{document}
+
+
+% Tell LaTeX to make the title.
+%\maketitle
+% Tell LaTex to double space your text.
+%\doublespacing
+%\section{Topic 5}
+\begin{problem}{Chia hết!}{Standard Input}{Standard Output}{1 giây}{256}
+
+Khánh là một con người yêu thích toán học. Hàng ngày, Khánh hay ngồi nghiên cứu những bài toán hóc búa
+mà bao đời nay chưa có lời giải, ví dụ như phỏng đoán của Goldbach: mọi số chẵn lớn hơn 2 đều là tổng của
+hai số nguyên tố; hay là tồn tại vô số cặp số nguyên tố sinh đôi hay không...
+
+Mặc dù phát biểu các bài toán trên vô cùng đơn giản, song việc tìm lời giải cho chúng dường như là không 
+thể đối với loài người bây giờ. Vì vậy, hàng ngày Khánh chỉ dành 5 phút để nghiên cứu những vấn đề hóc búa 
+trên và dành thời gian nghiên cứu cái khác.
+
+Ngoài ra, vẻ đẹp của toán học còn đến từ những bài toán đơn giản nữa. Ta có thể liệt kê một số bài toán như
+sau: cho hai số $N$, $X$, tìm số lớn nhất không viết được dưới dạng $aN + bX$; cho hai số $N$, $X$, tìm số nhỏ nhất có
+$N$ chữ số chia hết cho $X$; cho hai số $N$, $X$, tìm ước chung lớn nhất của $N$ và $X$; cho hai số $N$, $X$, tìm ước chung
+lớn nhất của số fib thứ $N$ và số fib thứ $X$; ...
+
+Để ý, vẻ đẹp của toán học không chỉ đến từ những thứ trừu tượng như tổng 3 góc của tam giác = 180 độ hay
+trực tâm, trọng tâm, tâm đường tròn ngoại tiếp và tâm đường tròn 9 điểm thẳng hàng (đường thẳng Euler)...
+mà còn hiện hữu trong cuộc sống xung quanh ta: tháp Eiffel có hình dạng rất đặc biệt: tầng một của tháp có
+dạng tuyến tính, tầng 2 có dạng số mũ; hình dạng đặc biệt của tổ ong cho kết quả tiết kiệm nhất mà đạt được
+dung tích lớn nhất; ... Do đó Khánh dành kha khá thời gian nghiên cứu các vấn đề này để tự sướng.
+
+Hôm qua, Khánh đã dành thời gian để nghiên cứu vẻ đẹp trong cuộc sống rồi nên hôm nay Khánh sẽ làm việc đơn
+giản, ví dụ như làm bài toán đơn giản 2. Bạn có thể làm nhanh hơn Khánh không?
+
+\InputFile
+
+\begin{itemize}
+	\item Gồm 1 dòng duy nhất chứa 2 số $N$ và $X$.
+\end{itemize}
+
+\OutputFile
+
+\begin{itemize}
+	\item In ra 1 số duy nhất là số cần tìm. Nếu số đó không tồn tại in $-1$.
+\end{itemize}
+
+\Constraints
+\begin{itemize}
+	\item Subtask 1 (10\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 7$
+		\item $1 \le X \le 10^3$
+	\end{itemize}
+	\item Subtask 2 (10\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 15$
+		\item $1 \le X \le 10^7$
+	\end{itemize}
+	\item Subtask 3 (20\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 15$
+		\item $1 \le X \le 10^{12}$
+	\end{itemize}
+	\item Subtask 4 (20\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 100$
+		\item $1 \le X \le 10^{15}$
+	\end{itemize}
+	\item Subtask 5 (40\% số điểm):
+	\begin{itemize}
+		\item $1 \le N \le 10^5$
+		\item $1 \le X \le 10^{15}$
+	\end{itemize}
+\end{itemize}
+
+\Example
+
+\begin{example}
+\exmp{
+3 214
+}{
+214
+}%
+\end{example}
+
+\vspace{.5cm}
+
+\end{problem}
+
+
+\end{document}
