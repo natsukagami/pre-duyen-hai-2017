@@ -84,7 +84,7 @@ for (int i = 0; i < N; ++i) {
 	}
 	ans.push_back(A[i]);
 }
-while (K) ans.pop_back();
+while (K--) ans.pop_back();
 // In ra ans
 ```
 #### Sử dụng tham từng chữ số
